@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: white;
+    
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #212121;
+}
+.container{
+  position: relative;
+}
+.clock{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+}
+.clock span{
+  position: absolute;
+  transform: rotate(calc(30deg * var(--i)));
+  inset: 12px;
+ text-align: center;
+}
+.clock span b{
+  transform: rotate(calc(-30deg * var(--i)));
+  display: inline-block;
+  font-size: 20px;
+}
+.dot{
+ height: 8px;
+ width: 8px;
+ border-radius: 50%;
+ background-color: white; 
+}
+/* .i{
+ height: 2px;
+ width: 85px;
+  position: absolute;
+  left: 74px;
+  top: 150px;
+  background-color: antiquewhite;
+}
+.j{
+  height: 3px;
+  width: 57px;
+  transform: rotate(90deg);
+   position: absolute;
+   left: 126px;
+   top: 123px;
+   background-color: bisque;
+   font-size: 20px;
+}
+.k{
+  height: 2px;
+  width: 89px;
+   position: absolute;
+   rotate: 45deg;
+   top: 178px;
+   right: 74px;
+   background-color: yellow;
+} */
+/* to avoid all this bullshit just asign variables */
+.hand{
+position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  
+}
+
+.hand i{
+position: absolute;
+background-color: var(--clr);
+width: 4px;
+height: 70px;
+border-radius: 8px;
+}
